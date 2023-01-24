@@ -20,7 +20,8 @@ try:
         frend_dict = {'name': input('Введите имя друга: '), 'age': input('Введите возраст друга: ')}
         frends.append(frend_dict)
     print(frends)
+    x = (list([values for frend_dict in frends for values in frend_dict.values()]))
     y = x.index(min(x))
-    print('Самый младший -', x[y-1])
+    print('Самый младший -', x[y - 1])
 except:
     print('Ошибка ввода! Начните сначала!')
